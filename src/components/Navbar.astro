@@ -1,0 +1,110 @@
+<div class="section p-2 navbar-row">
+	<div class="container">
+		<div class="columns is-vcentered">
+			<div class="column">
+				<figure class="image">
+					<img
+						src="/img/logo/believe-cleaning-logo_trans.webp"
+						alt=""
+						width="200"
+						height="60"
+					/>
+				</figure>
+			</div>
+
+			<div class="column">
+				<div class="level">
+					<div class="level-left">
+						<div class="level-item">
+							<div
+								class="icon-wrap is-icon-reveal is-size-3 has-text-secondary"
+							>
+								<i class="iconify" data-icon="fa6-regular:clock"></i>
+							</div>
+						</div>
+						<div class="level-item">
+							<div class="subtitle">
+								Working Hours<br /> 8:00 a.m. to 6 p.m.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="block">
+					<h4 class="subtitle has-text-right">
+						Call us<br />
+						<span class="is-size-3">646-408-3334</span>
+					</h4>
+				</div>
+			</div>
+
+			<div class="column">
+				<div class="block has-text-right">
+					<a href="/quote" class="button is-primary rounded is-large"
+						>QUOTE NOW</a
+					>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<nav
+	x-data="initNavbar()"
+	class="navbar is-fresh is-transparent no-shadow"
+	role="navigation"
+	aria-label="main navigation"
+>
+	<div class="container">
+		<div class="navbar-brand">
+			<!-- <a class="navbar-item" href="/">
+      	</a> -->
+
+			<div class="navbar-burger" @click="openMobileMenu()">
+				<span class="menu-toggle">
+					<span
+						class="icon-box-toggle"
+						:class=`{
+                            'active': mobileOpen,
+                            '': !mobileOpen
+                    			}`
+					>
+						<span class="rotate">
+							<i class="icon-line-top"></i>
+							<i class="icon-line-center"></i>
+							<i class="icon-line-bottom"></i>
+						</span>
+					</span>
+				</span>
+			</div>
+		</div>
+
+		<div
+			id="navbar-menu"
+			class="navbar-menu is-static"
+			:class="{
+                'is-active': mobileOpen,
+                '': !mobileOpen
+            }"
+		>
+			<div class="navbar-start">
+				<a href="#" class="navbar-item is-secondary"> Home</a>
+				<a href="#" class="navbar-item is-secondary"> About</a>
+				<a href="#" class="navbar-item is-secondary"> Services</a>
+				<a href="#" class="navbar-item is-secondary"> Pricing</a>
+				<a href="#" class="navbar-item is-secondary"> FAQs</a>
+				<a href="#" class="navbar-item is-secondary"> Contact</a>
+			</div>
+
+			<!-- <div class="navbar-end">
+				<a class="navbar-item">
+					<span class="button signup-button secondary-btn raised">
+						Sign up
+					</span>
+				</a>
+			</div> -->
+		</div>
+	</div>
+</nav>
