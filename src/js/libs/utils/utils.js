@@ -10,9 +10,25 @@ export function insertBgImages() {
   if (typeof targets != "undefined" && targets != null) {
     for (var i = 0, len = targets.length; i < len; i++) {
       let bgUrl = targets[i].getAttribute("data-background");
+      let bgPos = targets[i].getAttribute("data-position");
       targets[i].style.backgroundSize = "cover";
       targets[i].style.backgroundRepeat = "no-repeat";
+       targets[i].style.backgroundPosition = bgPos;
       targets[i].style.backgroundImage = `url(${bgUrl})`;
+    }
+  }
+}
+
+
+export function insertOverlays() {
+  const targets = document.querySelectorAll(".overlay");
+
+  if (typeof targets != "undefined" && targets != null) {
+    for (var i = 0, len = targets.length; i < len; i++) {
+      let bgColor = targets[i].getAttribute("data-color");
+      let bgOpac = targets[i].getAttribute("data-color-opacity");
+      targets[i].style.backgroundColor = bgColor;
+      targets[i].style.opacity = bgOpac;
     }
   }
 }

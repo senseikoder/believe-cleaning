@@ -13,8 +13,8 @@ Hero styles
   padding-bottom: 6rem;
 
   .title {
-    font-family: $font;
-    color: $blue-grey;
+    // font-family: $font;
+    color: $white;
   }
 
   .title {
@@ -25,13 +25,7 @@ Hero styles
 
   .subtitle {
     &.is-muted {
-      color: $muted-grey;
-    }
-  }
-
-  .landing-caption {
-    .button {
-      min-width: 130px;
+      color: $light-grey;
     }
   }
 

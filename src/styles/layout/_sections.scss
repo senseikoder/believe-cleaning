@@ -28,10 +28,6 @@ h6 {
     background-color: $light-grey;
   }
 
-  &.section-feature-grey {
-    background-color: $section-grey;
-  }
-
   &.section-secondary {
     background-color: $secondary;
   }
@@ -66,7 +62,7 @@ h6 {
   }
 }
 
-//Titles
+// Titles
 .title-wrapper {
   max-width: 500px;
   margin: 0 auto;

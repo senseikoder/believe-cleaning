@@ -13,16 +13,31 @@ Cards and Card content styles
 
 .feature-card {
   width: 100%;
-  background-color: #fff;
-  border-radius: 3px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
   margin: 0 auto;
-  padding: 2.5rem;
+  padding: 3rem 2rem;
+
+  .card-title h3 {
+    font-family: $font-heading;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: $dark-grey;
+  }
 
   .card-title h4 {
     font-family: $font-heading;
     font-size: 1.2rem;
     font-weight: 600;
-    color: $blue-grey;
+    color: $dark-grey;
+  }
+
+  .card-title .image {
+    border-radius: 8px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    width: 100%;
+    height: 180px;
   }
 
   .card-icon {
@@ -35,7 +50,7 @@ Cards and Card content styles
   }
 
   .card-text {
-    max-width: 210px;
+    // max-width: 250px;
     margin: 0 auto;
 
     p {
@@ -54,6 +69,10 @@ Cards and Card content styles
 
   &.is-bordered {
     border: 1px solid $fade-grey;
+  }
+
+  &.raised {
+    box-shadow: 5px 5px 10px 0px rgba(45, 45, 45, 0.2);
   }
 }
 

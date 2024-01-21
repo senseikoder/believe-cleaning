@@ -15,9 +15,10 @@ Classes to change the feel of bulma buttons
   }
 
   &.cta {
-    font-size: 1rem;
+    font-size: 1.75rem;
     font-weight: 500;
-    height: 44px;
+    height: 60px;
+    padding-inline: 50px;
   }
 
   &.is-clear {

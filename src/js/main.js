@@ -29,13 +29,15 @@ Alpine.store("app", {
 // Start Alpine JS
 Alpine.start()
 
-import { insertBgImages } from "./libs/utils/utils";
+import { insertBgImages, insertOverlays } from "./libs/utils/utils";
+import "./libs/flickity.pkgd.min.js";
 import "./libs/components";
 
 document.onreadystatechange = function () {
   if (document.readyState == "complete") {
 
     //Switch backgrounds
-    const changeBackgrounds = insertBgImages();
+    insertBgImages();
+    insertOverlays();
   }
 };

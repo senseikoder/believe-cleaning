@@ -67,7 +67,7 @@ Testimonials Styles
     margin-top: 1.5rem;
     z-index: 0;
 
-    > div {
+    >div {
       line-height: 1.2;
     }
 
@@ -87,4 +87,11 @@ Testimonials Styles
       top: 50%;
     }
   }
+}
+
+.carousel-cell {
+  width: 33%;
+  height: 160px;
+  /* height of carousel */
+  margin-right: 10px;
 }

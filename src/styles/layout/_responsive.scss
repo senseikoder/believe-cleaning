@@ -55,6 +55,7 @@ Responsive Styles
   }
 
   .app-side {
+
     .title,
     .subtitle {
       text-align: center;
@@ -80,6 +81,14 @@ Responsive Styles
   .form-button {
     width: 100%;
   }
+
+  .slider-container {
+    gap: 10px;
+  }
+
+    .feature-card {
+      padding: 1.5rem;
+    }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
@@ -143,6 +152,7 @@ Responsive Styles
   }
 
   .side-feature {
+
     .subtitle,
     .title {
       max-width: 420px;
@@ -161,6 +171,7 @@ Responsive Styles
   }
 
   .app-side {
+
     .title,
     .subtitle {
       text-align: center;
