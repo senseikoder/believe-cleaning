@@ -296,22 +296,23 @@ const title = "Home";
 <script>
 
    import Flickity from "flickity";
-		document.addEventListener('astro:page-load', () => {
-		var flkty = new Flickity(".service-carousel", {
+
+	document.addEventListener('astro:page-load', () => {
+		let flkty = new Flickity(".service-carousel", {
 			draggable: true,
 			contain: true,
 			freeScroll: true,
 			wrapAround: true,
 		});
 
-		var flkty2 = new Flickity(".testi-carousel", {
+		let flkty2 = new Flickity(".testi-carousel", {
 			draggable: true,
 			contain: true,
 			freeScroll: true,
 			pageDots: false,
 			wrapAround: true,
 		});
-});
+	});
 
   
 </script>
