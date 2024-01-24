@@ -1,20 +1,18 @@
 ---
 import Layout from "../layouts/Default.astro";
-import Navbar from "../components/Navbar.astro";
-import NavbarClone from "../components/NavbarClone.astro";
 import Testimonials from "../components/Testimonials.astro";
 import Services from "../components/Services.astro";
+import "flickity/dist/flickity.min.css";
 const title = "Home";
-
-import '../styles/components/flickity.min.css';
 ---
 
 <Layout title={title}>
-	<Navbar />
-	<NavbarClone />
 
-	<section class="hero is-fullheight is-grey" 
-		data-background="img/banner-home.webp" data-position="bottom center">
+	<section
+		class="hero is-fullheight is-grey"
+		data-background="img/banner-home.webp"
+		data-position="bottom center"
+	>
 		<div class="hero-body">
 			<div class="container">
 				<div class="columns is-vcentered is-centered">
@@ -27,11 +25,10 @@ import '../styles/components/flickity.min.css';
 							& Commercial Cleaning, <br /> we go above and beyond to satisfy
 							our customers' cleaning needs.
 						</h2>
-						
-						<a class="button cta primary-btn raised rounded">
+
+						<a class="button cta primary-btn raised rounded gelatine">
 							Quote now
 						</a>
-						
 					</div>
 					<!-- <div class="column is-7">
             <img src="/img/illustrations/worker.svg" class="hero-image" alt="Description" />
@@ -41,12 +38,7 @@ import '../styles/components/flickity.min.css';
 		</div>
 	</section>
 
-
-
-
-
 	<!-- PROMO -->
-
 
 	<section class="section is-medium">
 		<div class="container">
@@ -59,8 +51,7 @@ import '../styles/components/flickity.min.css';
 			<div class="feature-cards content-wrapper">
 				<div class="columns">
 					<div class="column is-6">
-						<div
-							class="feature-card is-bordered has-text-centered">
+						<div class="feature-card is-bordered has-text-centered">
 							<div class="card-title">
 								<h4>Residential & Commercial</h4>
 							</div>
@@ -74,15 +65,21 @@ import '../styles/components/flickity.min.css';
 								</p>
 							</div>
 							<div class="card-action">
-								<a href="#" class="button primary-btn raised rounded mr-2">
+								<a
+									href="#"
+									class="button primary-btn raised rounded mr-2"
+								>
 									<span class="icon">
-										<i class="iconify" data-icon="fa6-brands:facebook"></i>					
+										<i class="iconify" data-icon="fa6-brands:facebook"
+										></i>
 									</span>
 									<span>Facebook</span>
 								</a>
 								<a href="#" class="button primary-btn raised rounded">
 									<span class="icon">
-										<i class="iconify" data-icon="fa6-brands:instagram"></i>					
+										<i
+											class="iconify"
+											data-icon="fa6-brands:instagram"></i>
 									</span>
 									<span>Instagram</span>
 								</a>
@@ -90,24 +87,28 @@ import '../styles/components/flickity.min.css';
 						</div>
 					</div>
 					<div class="column is-6">
-						<div
-							class="feature-card is-bordered has-text-centered">
+						<div class="feature-card is-bordered has-text-centered">
 							<div class="card-title">
 								<h4>Get a free quote</h4>
 							</div>
 							<div class="card-text">
 								<p class="is-size-5 my-4">
-									<br>
-									By calling or email at:<br>
-									<a href="tel:646-408-3334" target="_blank">(646) 408-3334</a>
-									<a href="mailto:info@believecleaning.com">info@believecleaning.com</a>
+									<br />
+									By calling or email at:<br />
+									<a href="tel:646-408-3334" target="_blank"
+										>(646) 408-3334</a
+									>
+									<a href="mailto:info@believecleaning.com"
+										>info@believecleaning.com</a
+									>
 								</p>
 								<p class="is-size-5 my-4">&nbsp;</p>
 							</div>
 							<div class="card-action">
 								<a href="#" class="button primary-btn raised rounded">
 									<span class="icon">
-										<i class="iconify" data-icon="fa6-brands:whatsapp"></i>					
+										<i class="iconify" data-icon="fa6-brands:whatsapp"
+										></i>
 									</span>
 									<span>Whatsapp</span>
 								</a>
@@ -118,6 +119,9 @@ import '../styles/components/flickity.min.css';
 			</div>
 		</div>
 	</section>
+
+
+
 
 
 
@@ -139,6 +143,50 @@ import '../styles/components/flickity.min.css';
 
 
 
+	<section
+		class="section is-medium has-background-image"
+		data-background="img/bg-whychoose.webp"
+		data-position="center"
+	>
+		<div class="overlay" data-color="#0f466b" data-color-opacity=".75"></div>
+
+		<div class="container">
+			<div class="title-wrapper has-text-centered">
+				<h2 class="title is-2 light-text is-spaced">Why Choose Us</h2>
+				<h3 class="subtitle is-5 light-text">
+					Professionalism, courtesy, and efficiency are all hallmarks of
+					our team. We take great pride in making your home and workplace
+					pleasant.
+				</h3>
+
+				<div class="buttons is-justify-content-center">
+					<a
+						href="tel:+1646-408-3334"
+						class="button secondary-btn raised is-large rounded"
+					>
+						<span class="icon">
+							<i class="iconify" data-icon="fa6-solid:phone"></i>
+						</span>
+						<span>Call Us Now!</span>
+					</a>
+
+					<!-- <a href="mailto:info@bleievecleaning.com" class="button secondary-btn raised is-large rounded">
+						<span class="icon">
+							<i class="iconify" data-icon="fa6-regular:envelope"></i>					
+						</span>
+						<span>Email Us</span>
+					</a> -->
+				</div>
+			</div>
+		</div>
+	</section>
+
+
+
+
+
+
+
 
 
 
@@ -151,25 +199,31 @@ import '../styles/components/flickity.min.css';
 			<div class="columns is-vcentered app-side">
 				<div class="column is-5">
 					<div class="has-text-centered">
-						<img
-						class="side-image"
-						src="/img/Believe-Eulalia.webp"
-						/>
+						<figure class="image">
+							<img src="/img/Believe-Eulalia.webp" />
+						</figure>
 					</div>
 				</div>
 				<div class="column is-6 is-offset-1">
-					<h3 class="title is-3">
-						About Us
-					</h3>
-					<h4 class="subtitle is-6">
-						Who we are
-					</h4>
+					<h3 class="title is-3">About Us</h3>
+					<h4 class="subtitle is-6">Who we are</h4>
 					<div class="content">
 						<p>
-							The Believe team is continually working hard to make your life easier. So, whether it's cleaning your office, cleaning your home, preparing your home for a move-in & out cleaning, or cleaning up before or after a party, we've got you covered! At believe we believe in always do the right thing for our customers and our staff to satisfy everyone. As a result, we take great pleasure in being able to tackle any size home or business project you may have for us. 
+							The Believe team is continually working hard to make your
+							life easier. So, whether it's cleaning your office,
+							cleaning your home, preparing your home for a move-in & out
+							cleaning, or cleaning up before or after a party, we've got
+							you covered! At believe we believe in always do the right
+							thing for our customers and our staff to satisfy everyone.
+							As a result, we take great pleasure in being able to tackle
+							any size home or business project you may have for us.
 						</p>
-						<p>						
-							Give believe cleaning service a call for an estimate and set up a time that works for your busy schedule if you need professional cleaning. Our experts are experienced, reliable, and committed to providing the finest service possible.
+						<p>
+							Give believe cleaning service a call for an estimate and
+							set up a time that works for your busy schedule if you need
+							professional cleaning. Our experts are experienced,
+							reliable, and committed to providing the finest service
+							possible.
 						</p>
 					</div>
 				</div>
@@ -177,64 +231,9 @@ import '../styles/components/flickity.min.css';
 		</div>
 	</section>
 
-	
-
-
-
-
-
-
-
-
-
-
-
-	<section
-		class="section is-medium has-background-image"
-		data-background="img/bg-whychoose.webp"
-		data-position="center"	
-	>
-		<div class="overlay" data-color="#0f466b" data-color-opacity=".75"></div>
-
-		<div class="container">
-			<div class="title-wrapper has-text-centered">
-				<h2 class="title is-2 light-text is-spaced">Why Choose Us</h2>
-				<h3 class="subtitle is-5 light-text">
-					Professionalism, courtesy, and efficiency are all hallmarks of our team. We take great pride in making your home and workplace pleasant.
-				</h3>
-
-				<div class="buttons is-justify-content-center">
-					<a href="tel:+1646-408-3334" class="button secondary-btn raised is-large rounded">
-							<span class="icon">
-								<i class="iconify" data-icon="fa6-solid:phone"></i>					
-							</span>
-							<span>Call Us Now!</span>
-					</a>
-
-					<!-- <a href="mailto:info@bleievecleaning.com" class="button secondary-btn raised is-large rounded">
-						<span class="icon">
-							<i class="iconify" data-icon="fa6-regular:envelope"></i>					
-						</span>
-						<span>Email Us</span>
-					</a> -->
-				</div>
-			</div>
-
-		</div>
-
-	</section>
-
-
-
-
-
+	<!-- Why choose us -->
 
 	<Testimonials />
-
-	
-
-
-
 
 	<section class="section section-light-grey is-medium">
 		<div class="container">
@@ -269,10 +268,12 @@ import '../styles/components/flickity.min.css';
 										type="text"
 										placeholder="Email *"
 									/>
-								</div>								
+								</div>
 								<div class="column is-12">
-									<textarea class="textarea" rows="6" placeholder="Message"
-									></textarea>
+									<textarea
+										class="textarea"
+										rows="6"
+										placeholder="Message"></textarea>
 								</div>
 								<div class="column is-12">
 									<div class="form-footer has-text-right mt-10">
@@ -289,5 +290,28 @@ import '../styles/components/flickity.min.css';
 			</div>
 		</div>
 	</section>
-
 </Layout>
+
+
+<script>
+
+   import Flickity from "flickity";
+		document.addEventListener('astro:page-load', () => {
+		var flkty = new Flickity(".service-carousel", {
+			draggable: true,
+			contain: true,
+			freeScroll: true,
+			wrapAround: true,
+		});
+
+		var flkty2 = new Flickity(".testi-carousel", {
+			draggable: true,
+			contain: true,
+			freeScroll: true,
+			pageDots: false,
+			wrapAround: true,
+		});
+});
+
+  
+</script>

@@ -1,0 +1,37 @@
+---
+import Layout from "../layouts/Default.astro";
+import ServicesCols from "../components/ServicesCols.astro";
+const title = "Services - Believe Cleaning";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image"
+      data-background="img/banner-services.webp"
+      data-position="center"
+   >
+      <div class="overlay" data-color="#0f466b" data-color-opacity=".75"></div>
+
+      <div class="container">
+         <div class="columns is-vcentered is-centered">
+            <div class="column is-10 has-text-centered">
+               <h1 class="title is-1 is-bold light-text">Areas We Service</h1>
+               <h3 class="subtitle is-5 light-text">
+                  Manhattan - Brooklyn - Queens -Staten Island - Long Island
+               </h3>
+
+               <!-- <a class="button cta primary-btn raised rounded gelatine">
+                     Quote now
+                  </a> -->
+            </div>
+            <!-- <div class="column is-7">
+            <img src="/img/illustrations/worker.svg" class="hero-image" alt="Description" />
+          </div> -->
+         </div>
+      </div>
+   </section>
+
+   
+   <ServicesCols />
+
+</Layout>

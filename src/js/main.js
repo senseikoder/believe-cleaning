@@ -1,19 +1,19 @@
-"use strict";
+// "use strict";
 
 //Alpine JS and plugins import
 import Alpine from "alpinejs"
-import intersect from "@alpinejs/intersect"
-import collapse from '@alpinejs/collapse';
+// import intersect from "@alpinejs/intersect"
+// import collapse from '@alpinejs/collapse';
 import persist from "@alpinejs/persist";
 import Iconify from '@iconify/iconify';
 
 window.Alpine = Alpine
 //Init intersect plugin
-Alpine.plugin(intersect)
+// Alpine.plugin(intersect)
 //Init persist plugin
 Alpine.plugin(persist)
 //Init collapse plugin
-Alpine.plugin(collapse);
+// Alpine.plugin(collapse);
 // Init store
 Alpine.store("app", {
   init() {
@@ -29,15 +29,24 @@ Alpine.store("app", {
 // Start Alpine JS
 Alpine.start()
 
-import { insertBgImages, insertOverlays } from "./libs/utils/utils";
-import "./libs/flickity.pkgd.min.js";
+import { insertBgImages, insertOverlays, initModals } from "./libs/utils/utils";
 import "./libs/components";
 
-document.onreadystatechange = function () {
-  if (document.readyState == "complete") {
+// document.onreadystatechange = function () {
+//   if (document.readyState == "complete") {
 
-    //Switch backgrounds
-    insertBgImages();
-    insertOverlays();
-  }
-};
+//     //Switch backgrounds
+//     insertBgImages();
+//     insertOverlays();
+//   }
+// };
+
+
+document.addEventListener('astro:page-load', () => {
+  // console.log('👍🏻');
+  //Switch backgrounds
+  insertBgImages()
+  insertOverlays()
+  initModals()
+});
+

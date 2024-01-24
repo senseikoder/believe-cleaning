@@ -1,4 +1,4 @@
-<div class="section p-3 navbar-row">
+<div class="section p-3 navbar-row is-hidden-mobile">
 	<div class="container">
 		<div class="columns is-vcentered">
 			<div class="column">
@@ -42,7 +42,7 @@
 
 			<div class="column">
 				<div class="block has-text-right">
-					<a href="/quote" class="button is-primary rounded is-large"
+					<a href="/quote" class="button is-primary rounded raised is-large"
 						>QUOTE NOW</a
 					>
 				</div>
@@ -58,18 +58,24 @@
 	aria-label="main navigation"
 >
 	<div class="container">
-		<div class="navbar-brand">
-			<!-- <a class="navbar-item" href="/">
-      	</a> -->
+		<div class="navbar-brand is-hidden-tablet">
+			<a class="navbar-item" href="/">
+				<img
+					src="/img/logo/believe-cleaning-logo_trans.webp"
+					alt=""
+					width="200"
+					height="60"
+				/>
+			</a>
 
 			<div class="navbar-burger" @click="openMobileMenu()">
 				<span class="menu-toggle">
 					<span
 						class="icon-box-toggle"
-						:class=`{
-                            'active': mobileOpen,
-                            '': !mobileOpen
-                    			}`
+						:class="{
+                      'active': mobileOpen,
+                      '': !mobileOpen
+                  }"
 					>
 						<span class="rotate">
 							<i class="icon-line-top"></i>
@@ -90,12 +96,12 @@
             }"
 		>
 			<div class="navbar-start has-text-weight-medium is-size-5">
-				<a href="#" class="navbar-item is-secondary"> Home</a>
-				<a href="#" class="navbar-item is-secondary"> About</a>
-				<a href="#" class="navbar-item is-secondary"> Services</a>
-				<a href="#" class="navbar-item is-secondary"> Pricing</a>
-				<a href="#" class="navbar-item is-secondary"> FAQs</a>
-				<a href="#" class="navbar-item is-secondary"> Contact</a>
+				<a href="/" class="navbar-item is-secondary"> Home</a>
+				<a href="/about" class="navbar-item is-secondary"> About</a>
+				<a href="/services" class="navbar-item is-secondary"> Services</a>
+				<a href="/gallery" class="navbar-item is-secondary"> Gallery</a>
+				<a href="/faqs" class="navbar-item is-secondary"> FAQs</a>
+				<a href="/contact" class="navbar-item is-secondary"> Contact</a>
 			</div>
 
 			<!-- <div class="navbar-end">

@@ -133,52 +133,18 @@ Cards and Card content styles
 
 //Modal card
 .modal {
-  .auth-card {
-    max-width: 420px;
+  transition: all .3s;
+
+  .flex-card {
+    padding: 1rem;
+  }
+
+  .gallery {
+    max-width: 720px;
     margin: 0 auto;
     border-radius: 6px;
 
-    .tabs {
-      margin-bottom: 0;
+    
 
-      li {
-        a {
-          color: $placeholder;
-        }
-
-        &.is-active {
-          a {
-            color: $secondary;
-            border-bottom-color: $secondary;
-          }
-        }
-      }
-    }
-
-    .tab-content {
-      padding: 20px;
-
-      .field {
-        max-width: 390px;
-        margin: 10px auto;
-
-        label {
-          display: block;
-          font-weight: 500;
-          font-size: 0.9rem;
-        }
-
-        .input {
-          font-size: 0.95rem;
-          height: 44px;
-        }
-      }
-
-      .button.is-fullwidth {
-        padding: 20px 0;
-        max-width: 390px;
-        margin: 20px auto;
-      }
-    }
   }
 }
