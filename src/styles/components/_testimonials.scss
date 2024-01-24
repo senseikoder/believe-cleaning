@@ -12,16 +12,17 @@ Testimonials Styles
   position: relative;
   overflow: hidden;
   margin: 10px auto;
-  width: 100%;
-  color: #333;
-  text-align: left;
-  background-color: $smoke-white;
+  width: 65%;
+  color: $white;
+  text-align: center;
+  // background-color: $smoke-white;
+  background-color: transparent;
   padding: 2rem;
   border-radius: 0.65rem;
   font-size: 1.2rem;
   font-weight: 500;
   line-height: 1.6em;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  // box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 
   * {
     -webkit-box-sizing: border-box;
@@ -41,7 +42,8 @@ Testimonials Styles
     margin-top: 1.75rem;
     font-size: 1.25rem;
     font-weight: 400;
-    color: $blue-grey;
+    // color: $blue-grey;
+    color: $white;
     display: block;
   }
 
@@ -49,19 +51,20 @@ Testimonials Styles
     font-family: "Material Icons", sans-serif;
     content: "\e244";
     position: absolute;
-    font-size: 30px;
-    opacity: 0.3;
+    font-size: 40px;
+    opacity: 0.7;
     font-style: normal;
   }
 
   blockquote:before {
-    top: 16px;
-    left: 16px;
+    top: 20px;
+    left: 20px;
   }
 
   .author {
     display: flex;
     align-items: center;
+    justify-content: center;
     gap: 0.75rem;
     text-align: left;
     margin-top: 1.5rem;
@@ -77,21 +80,14 @@ Testimonials Styles
       margin: 0;
       font-weight: 600;
       font-size: 1.2rem;
-      color: $blue-grey;
+      color: $light-grey;
     }
 
     span {
       display: block;
       font-size: 0.8em;
-      color: lighten($blue-grey, 20%);
+      color: lighten($title-grey, 20%);
       top: 50%;
     }
   }
-}
-
-.carousel-cell {
-  width: 33%;
-  height: 160px;
-  /* height of carousel */
-  margin-right: 10px;
 }

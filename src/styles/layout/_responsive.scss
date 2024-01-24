@@ -64,6 +64,9 @@ Responsive Styles
 
   .testimonial {
     margin: 0 auto;
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: lighten($primary, 20%);
 
     blockquote {
       font-size: 1rem;
@@ -86,9 +89,18 @@ Responsive Styles
     gap: 10px;
   }
 
-    .feature-card {
-      padding: 1.5rem;
-    }
+  .feature-card {
+    padding: 1.5rem;
+  }
+
+  .footer-logo,
+  .footer-column {
+    text-align: center;
+  }
+
+  .footer-column .level {
+    justify-content: center;
+  }
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: portrait) {
@@ -201,10 +213,6 @@ Responsive Styles
     }
   }
 
-  .footer-logo,
-  .footer-column {
-    text-align: center;
-  }
 
   .level {
     &.is-mobile {
