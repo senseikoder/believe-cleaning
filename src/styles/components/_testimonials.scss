@@ -47,19 +47,15 @@ Testimonials Styles
     display: block;
   }
 
-  blockquote:before {
-    font-family: "Material Icons", sans-serif;
-    content: "\e244";
+  .icon {
     position: absolute;
-    font-size: 40px;
+    font-size: 2rem;
     opacity: 0.7;
     font-style: normal;
-  }
-
-  blockquote:before {
-    top: 20px;
+    top: 30px;
     left: 20px;
   }
+
 
   .author {
     display: flex;
