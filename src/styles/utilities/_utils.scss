@@ -42,7 +42,6 @@ body {
   transition: 0.35s;
   transform: scale(0.7);
   transition: all 0.5s;
-  display: flex;
 
   &.visible {
     opacity: 1;
@@ -64,17 +63,6 @@ body {
       text-align: center;
       font-size: 26px;
 
-      // &:after {
-      //   outline: none;
-      //   content: "\e316";
-      //   font-family: "Material Icons", sans-serif;
-      //   position: relative;
-      //   display: block;
-      //   top: 52%;
-      //   -webkit-transform: translateY(-55%);
-      //   transform: translateY(-55%);
-      // }
-
       &:hover {
         outline: none;
         opacity: 0.9;
@@ -84,7 +72,8 @@ body {
   }
 
   .icon-wrap {
-    transform: translateY(10px);
+    position: relative;
+    top: 5px;
     font-size: 1.2rem;
   }
 }
@@ -174,9 +163,3 @@ body {
   /* Firefox 18- */
   color: $placeholder;
 }
-
-
-// .flickity-slider {
-//   display: flex;
-//   align-items: stretch;
-// }

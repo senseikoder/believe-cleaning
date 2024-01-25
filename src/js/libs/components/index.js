@@ -1,7 +1,7 @@
-import { initNavbar } from './navbar/navbar';
-import { initSidebar } from './sidebar/sidebar';
-import { initBackToTop } from './backtotop/backtotop';
+import { initNavbar } from './navbar';
+import { initFAQ } from './faqs';
+import { initBackToTop } from './backtotop';
 
 window.initNavbar = initNavbar;
-window.initSidebar = initSidebar;
+window.initFAQ = initFAQ;
 window.initBackToTop = initBackToTop;

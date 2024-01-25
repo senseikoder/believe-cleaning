@@ -14,8 +14,8 @@ const title = "Services - Believe Cleaning";
       <div class="container">
          <div class="columns is-vcentered is-centered">
             <div class="column is-10 has-text-centered">
-               <h1 class="title is-1 is-bold light-text">FAQ</h1>
-               <h3 class="subtitle is-5 light-text">- Q & A -</h3>
+               <h1 class="title is-1 is-bold light-text">FAQs</h1>
+               <!-- <h3 class="subtitle is-5 light-text">- Q & A -</h3> -->
 
                <a class="button cta primary-btn raised rounded gelatine">
                   Quote now
@@ -26,6 +26,61 @@ const title = "Services - Believe Cleaning";
    </section>
 
    <div class="section is-medium">
-      <div class="container"></div>
+      <div class="container is-max-desktop">
+         <div class="title-wrapper has-text-centered">
+            <h2 class="title is-spaced">Frequently Asked Questions</h2>
+            <h4 class="subtitle is-muted">
+               Believe Cleaning Services is committed to your complete
+               satisfaction, which is why we strive to offer the most
+               consistent, reliable, and affordable commercial and residential
+               cleaning services around. Our team of experienced professionals
+               has taken the time to answer some of our most frequently asked
+               questions for your convenience.
+            </h4>
+            <div class="divider is-centered"></div>
+         </div>
+
+         <div class="content-wrapper" x-data="initFAQ()">   
+
+            <template x-for="(item, index) in faq" >
+
+               <div class="flex-card raised p-3 mb-5">
+                  <div class="media mb-2" @click="faq_selected !== index ? faq_selected = index : faq_selected = null">
+                     <div class="media-content">
+                        <div>
+                           <span class="subtitle" x-text="item.question"></span>
+                        </div>
+                     </div>
+                     <div class="media-right mt-0">
+                        <span class="icon">
+                           <i class="iconify" :data-icon="faq_selected === index ? 'fa6-solid:chevron-up' : 'fa6-solid:chevron-down'"></i>
+                        </span>
+                     </div>
+                  </div>
+                  <div class="answer" x-bind:style="faq_selected === index ? `max-height:  ${ $el.scrollHeight }px` : ``">
+                     <div class="has-text-grey p-2">                  
+                        <p x-text="item.answer"></p>
+                     </div>
+                  </div>
+               </div>
+
+            </template>
+
+
+         </div>
+      </div>
    </div>
 </Layout>
+
+<style>
+   .answer {
+      position: relative;
+      overflow: hidden;
+      max-height: 0;
+      transition: all .4s;
+   }
+
+   .media {
+      cursor: pointer;
+   }
+</style>
