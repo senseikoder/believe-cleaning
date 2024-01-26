@@ -20,9 +20,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@alpinejs/collapse": "3.13.0",
-    "@alpinejs/intersect": "3.13.0",
-    "@alpinejs/persist": "3.13.0",
     "@iconify/iconify": "3.1.1",
     "alpinejs": "3.13.0",
     "astro": "3.1.0",

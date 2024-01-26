@@ -46,9 +46,9 @@
       <div class="navbar-start">
         <a href="/" class="navbar-item is-secondary"> Home</a>
 				<a href="/about" class="navbar-item is-secondary"> About</a>
-				<div class="navbar-item has-dropdown is-hoverable">
+				<div class="navbar-item has-dropdown is-hoverable" @click="dropDownServices = ! dropDownServices; console.log(dropDownServices)">
 					<a class="navbar-link"> Services</a>
-					<div class="navbar-dropdown">
+					<div class="navbar-dropdown" :style="dropDownServices  && {display: 'block'} ">
 						<a href="/house-cleaning" class="navbar-item"> House Cleaning</a>
 						<a href="/deep-cleaning" class="navbar-item"> Deep cleaning</a>
 						<a href="/maid-service" class="navbar-item"> Maid Service</a>

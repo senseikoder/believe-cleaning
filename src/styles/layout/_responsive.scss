@@ -39,6 +39,16 @@ Responsive Styles
     .navbar-link {
       padding: 10px 20px !important;
     }
+
+    .navbar-dropdown {
+      display: none;
+      transition: all .4s;
+
+      .navbar-item {
+        background-color: lighten($primary, 60%) !important;
+
+      }
+    }
   }
 
   .title {
