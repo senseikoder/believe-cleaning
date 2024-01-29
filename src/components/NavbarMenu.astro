@@ -1,0 +1,19 @@
+
+<a href="/" class="navbar-item is-secondary"> Home</a>
+<a href="/about" class="navbar-item is-secondary"> About</a>
+<div class="navbar-item has-dropdown is-hoverable" @click="dropDownServices = ! dropDownServices; console.log(dropDownServices)">
+   <a class="navbar-link"> Services</a>
+   <div class="navbar-dropdown" :style="dropDownServices  && {display: 'block'} ">
+      <a href="/services/house-cleaning" class="navbar-item"> House Cleaning</a>
+      <a href="/services/deep-cleaning" class="navbar-item"> Deep Cleaning</a>
+      <a href="/services/maid-service" class="navbar-item"> Maid Service</a>
+      <a href="/services/pressure-cleaning" class="navbar-item"> Pressure Cleaning</a>
+      <a href="/services/move-inout-cleaning" class="navbar-item"> Move-In / Out Cleaning</a>
+      <a href="/services/rental-cleaning" class="navbar-item"> Rental Property Cleaning</a>
+      <a href="/services/construction-cleaning" class="navbar-item"> Post-Construction Cleaning</a>
+      <a href="/services/event-cleaning" class="navbar-item"> Special Event Cleaning</a>
+   </div>
+</div>
+<a href="/gallery" class="navbar-item is-secondary"> Gallery</a>
+<a href="/faqs" class="navbar-item is-secondary"> FAQs</a>
+<a href="/contact" class="navbar-item is-secondary"> Contact</a>

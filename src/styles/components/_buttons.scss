@@ -18,7 +18,8 @@ Classes to change the feel of bulma buttons
     font-size: 1.75rem;
     font-weight: 500;
     height: 60px;
-    padding-inline: 50px;
+    padding-inline: 35px;
+    outline: 2px solid whitesmoke;
   }
 
   &.is-clear {
@@ -52,7 +53,6 @@ Classes to change the feel of bulma buttons
 
 .button {
   &.primary-btn {
-    outline: none;
     border-color: $primary;
     background-color: $primary;
     color: $white;
@@ -81,7 +81,7 @@ Classes to change the feel of bulma buttons
   }
 
   &.secondary-btn {
-    outline: none;
+    // outline: none;
     border-color: $secondary;
     background-color: $secondary;
     color: $white;

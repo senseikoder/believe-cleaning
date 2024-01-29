@@ -1,0 +1,106 @@
+---
+import Layout from "../../layouts/Default.astro";
+import Aside from "../../components/Aside.astro";
+import QuoteNow from "../../components/QuoteNow.astro";
+const title = "About - Believe Cleaning";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image"
+      data-background="/img/banner-services-int.webp"
+      data-position="center 30%"
+   >
+      <div class="overlay" data-color="#0f466b" data-color-opacity=".35"></div>
+
+      <div class="container">
+         <div class="columns is-vcentered is-centered">
+            <div class="column is-10 has-text-centered">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Pressure Cleaning
+               </h1>
+
+               <QuoteNow />
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- About -->
+
+   <section class="section">
+      <div class="container">
+         <div class="content-wrapper">
+            <div class="columns">
+               <div class="column is-8">
+                  <div class="content">
+                     <figure class="image m-0 mb-5">
+                        <img src="/img/service-pressure-cleaning.webp" alt="" />
+                     </figure>
+
+                     <p>
+                        You can rely on the pressure washing experts at Believe
+                        to handle all of your exterior cleaning needs. Our staff
+                        is equipped with the latest technology and is skilled in
+                        cleaning a wide range of diverse surfaces. Using
+                        pressure cleaning, you can eliminate almost anything:
+                        dirt, grease, mold, and even animal waste and
+                        excretions. Get in touch with us to discover what we can
+                        do for you!
+                     </p>
+                     <p>
+                        Professional pressure washing may be necessary if the
+                        exterior of your home appears dirty. Cleaning surfaces
+                        with a pressure washer, often known as power washing, is
+                        expected in the construction industry. Pressure washing
+                        can remove almost anything from your patios, terraces,
+                        boats, automobiles, outdoor furniture, plastic playsets,
+                        grills, pathways, driveways, and even walls and fences.
+                     </p>
+
+                     <p>
+                        While you may have an intuitive notion of the strength
+                        and size required of a lawnmower, many homeowners are
+                        unfamiliar with pressure washing. It could cause damage
+                        to materials and surfaces if misapplied.
+                     </p>
+
+                     <h4 class="title is-3">Why Use a Professional?</h4>
+
+                     <p>
+                        The appropriate pressure washing technique can do
+                        wonders for any surface, including tile, wood, stone,
+                        concrete pavers, etc. Believe’s professionals understand
+                        that different materials and surfaces need different
+                        methods for cleaning your residential and commercial
+                        properties. Call today for a free estimate and see how
+                        we can make your house or patio seem even better!
+                     </p>
+
+                     <h4 class="subtitle is-5">
+                        The following are some of Believe’s pressure cleaning
+                        services:
+                     </h4>
+
+                     <ul class="normal-list">
+                        <li>Commercial and Residential Building cleaning</li>
+                        <li>Mold and Dirt Elimination</li>
+                        <li>Paving & Concrete</li>
+                        <li>Eaves and Fascia</li>
+                        <li>Pathways & Pavement</li>
+                        <li>Pergolas & Wooden Decks</li>
+                        <li>Grout on Tiled Surfaces</li>
+                        <li>High and Low-Pressure Cleaning</li>
+                        <li>Removal of Graffiti</li>
+                     </ul>
+                  </div>
+               </div>
+
+               <div class="column is-4">
+                  <Aside />
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</Layout>

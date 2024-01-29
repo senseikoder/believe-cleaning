@@ -1,3 +1,7 @@
+---
+import NavbarMenu from "./NavbarMenu.astro"
+---
+
 <div class="section p-3 navbar-row is-hidden-mobile">
 	<div class="container">
 		<div class="columns is-vcentered">
@@ -97,23 +101,7 @@
             }"
 		>
 			<div class="navbar-start has-text-weight-medium">
-				<a href="/" class="navbar-item is-secondary"> Home</a>
-				<a href="/about" class="navbar-item is-secondary"> About</a>
-				<div class="navbar-item has-dropdown is-hoverable" @click="dropDownServices = ! dropDownServices; console.log(dropDownServices)">
-					<a class="navbar-link"> Services</a>
-					<div class="navbar-dropdown" :style="dropDownServices  && {display: 'block'} ">
-						<a href="/house-cleaning" class="navbar-item"> House Cleaning</a>
-						<a href="/deep-cleaning" class="navbar-item"> Deep cleaning</a>
-						<a href="/maid-service" class="navbar-item"> Maid Service</a>
-						<a href="/move-inout-cleaning" class="navbar-item"> Move-In / Out Cleaning</a>
-						<a href="/rental-cleaning" class="navbar-item"> Rental Property Cleaning</a>
-						<a href="/construction-cleaning" class="navbar-item"> Post-Construction Cleaning</a>
-						<a href="/event-cleaning" class="navbar-item"> Special Event Cleaning</a>
-					</div>
-				</div>
-				<a href="/gallery" class="navbar-item is-secondary"> Gallery</a>
-				<a href="/faqs" class="navbar-item is-secondary"> FAQs</a>
-				<a href="/contact" class="navbar-item is-secondary"> Contact</a>
+				<NavbarMenu />
 			</div>
 
 			<!-- <div class="navbar-end">

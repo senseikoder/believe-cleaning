@@ -1,0 +1,96 @@
+---
+import Layout from "../../layouts/Default.astro";
+import Aside from "../../components/Aside.astro";
+import QuoteNow from "../../components/QuoteNow.astro";
+const title = "About - Believe Cleaning";
+---
+
+<Layout title={title}>
+   <section
+      class="section is-medium has-background-image"
+      data-background="/img/banner-services-int.webp"
+      data-position="center 30%"
+   >
+      <div class="overlay" data-color="#0f466b" data-color-opacity=".35"></div>
+
+      <div class="container">
+         <div class="columns is-vcentered is-centered">
+            <div class="column is-10 has-text-centered">
+               <h1 class="title is-1 is-bold is-spaced light-text">
+                  Special Event Cleaning
+               </h1>
+
+               <QuoteNow />
+            </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- About -->
+
+   <section class="section">
+      <div class="container">
+         <div class="content-wrapper">
+            <div class="columns">
+               <div class="column is-8">
+                  <div class="content">
+                     <figure class="image m-0 mb-5">
+                        <img src="/img/service-event-cleaning.webp" alt="" />
+                     </figure>
+
+                     <p>
+                        We provide residential and commercial cleaning services
+                        for occasions ranging in size from significant trade
+                        exhibits to intimate engagement parties. Rather than
+                        worrying about cleaning up after your event, you can put
+                        your energy into planning and executing it instead. Your
+                        guests will appreciate the clean and lovely environment,
+                        and you will feel secure knowing that you have a
+                        reliable partner on your side.
+                     </p>
+
+                     <p>
+                        The following events can benefit from Believe cleaning
+                        services:
+                     </p>
+
+                     <ul class="normal-list">
+                        <li>Wedding ceremonies</li>
+                        <li>Holidays</li>
+                        <li>Awards ceremonies</li>
+                        <li>Showers</li>
+                        <li>Funerals and festivities</li>
+                        <li>Exhibitions</li>
+                        <li>Festivals</li>
+                        <li>Gigs</li>
+                        <li>Fundraising ceremonies</li>
+                        <li>Sports Events</li>
+                        <li>Inaugurations</li>
+                     </ul>
+
+                     <p>
+                        Preparing or recovering from hosting a party, you’re
+                        going to need to deal with a lot of stress. Hire Believe
+                        Cleaning Services to get rid of your cleaning chores.
+                        With our cleaning services, you can make the magic
+                        happen before or after an event.
+                     </p>
+
+                     <p>
+                        Do you have a cleaning requirement that isn’t listed
+                        here? That doesn’t mean we don’t provide it! Contact us,
+                        and we’ll work with you to develop a unique solution
+                        just for you. To receive a free estimate for our event
+                        cleaning services, call us at 646-730-5667.
+                     </p>
+                  </div>
+               </div>
+
+               <div class="column is-4">
+                  <Aside />
+               </div>
+            </div>
+         </div>
+      </div>
+   </section>
+</Layout>
