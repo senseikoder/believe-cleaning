@@ -163,3 +163,19 @@ body {
   /* Firefox 18- */
   color: $placeholder;
 }
+
+.normal-list {
+  list-style: initial;
+  margin-left: 2rem;
+}
+
+.aside-list a {
+  background-color: $fade-grey;
+  margin-bottom: 2px;
+  color: $blue-grey;
+  padding: 1rem .75rem;
+  font-weight: 500;
+}
+.aside-list a:hover {
+  background-color: $primary-light;
+}

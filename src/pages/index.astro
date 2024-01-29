@@ -1,7 +1,7 @@
 ---
 import Layout from "../layouts/Default.astro";
 import Testimonials from "../components/Testimonials.astro";
-import Services from "../components/Services.astro";
+import ServicesCarousel from "../components/ServicesCarousel.astro";
 import "flickity/dist/flickity.min.css";
 const title = "Home";
 ---
@@ -26,13 +26,22 @@ const title = "Home";
 							our customers' cleaning needs.
 						</h2>
 
-						<a class="button cta primary-btn raised rounded gelatine">
-							Quote now
-						</a>
+						<div class="buttons is-justify-content-center">
+
+							<a class="button cta primary-btn raised rounded outline"
+								href="tel:646-408-3334">
+								Call Now
+							</a>
+							<a class="button cta secondary-btn raised rounded outline"
+								href="/free-quote">
+								Get Free Quote
+							</a>
+							<a class="button cta primary-btn raised rounded outline"
+								href="#">
+								Book Us now
+							</a>
+						</div>
 					</div>
-					<!-- <div class="column is-7">
-            <img src="/img/illustrations/worker.svg" class="hero-image" alt="Description" />
-          </div> -->
 				</div>
 			</div>
 		</div>
@@ -129,9 +138,9 @@ const title = "Home";
 
 
 
-	<!-- SERVICES -->
+	<!-- SERVICES CARRUSEL -->
 
-	<Services />
+	<ServicesCarousel />
 
 
 
@@ -200,7 +209,7 @@ const title = "Home";
 				<div class="column is-5">
 					<div class="has-text-centered">
 						<figure class="image">
-							<img src="pics/Believe-Eulalia.webp" />
+							<img src="/img/Believe-Eulalia.webp" />
 						</figure>
 					</div>
 				</div>
