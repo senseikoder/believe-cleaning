@@ -1,13 +1,14 @@
 ---
 import Layout from "../layouts/Default.astro";
-const title = "Services - Believe Cleaning";
+import ContactForm from "../components/ContactForm.astro";
+const title = "Contact";
 ---
 
 <Layout title={title}>
    <section
       class="section is-medium has-background-image"
-      data-background="/img/banner-services_.webp"
-      data-position="center bottom"
+      data-background="/img/banner-contact.webp"
+      data-position="center"
    >
       <div class="overlay" data-color="#0f466b" data-color-opacity=".75"></div>
 
@@ -25,7 +26,6 @@ const title = "Services - Believe Cleaning";
       </div>
    </section>
 
-   <div class="section is-medium">
-      <div class="container"></div>
-   </div>
+   <ContactForm />
+
 </Layout>

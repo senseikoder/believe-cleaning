@@ -1,0 +1,160 @@
+<section class="section section-light-grey is-medium">
+   <div class="container">
+      <div class="title-wrapper has-text-centered">
+         <h2 class="title is-2 is-spaced">Drop us a line or two</h2>
+         <h3 class="subtitle is-5 is-muted">We'd love to hear from You</h3>
+         <div class="divider is-centered"></div>
+      </div>
+
+      <div class="content-wrapper">
+         <div class="columns">
+            <div class="column is-6 is-offset-3">
+               <form id="contact-form">
+                  <div class="columns is-multiline">
+                     <div class="column is-6">
+                        <input
+                           class="input is-medium"
+                           type="text"
+                           id="nombreThulu2p"
+                           placeholder="First Name *"
+                           required
+                        />
+                     </div>
+                     <div class="column is-6">
+                        <input
+                           class="input is-medium"
+                           type="text"
+                           id="telfThulu2p"
+                           placeholder="Phone *"
+                           required
+                        />
+                     </div>
+                     <div class="column is-12">
+                        <input
+                           class="input is-medium"
+                           type="text"
+                           id="emailThulu2p"
+                           placeholder="Email *"
+                           required
+                        />
+                     </div>
+                     <div class="column is-12">
+                        <textarea
+                           class="textarea"
+                           rows="6"
+                           id="mensajeThulu2p"
+                           placeholder="Message" required></textarea>
+                     </div>
+                     <!-- T a r r i t o d e l i e m -->
+                     <div class="fieldset ohnohoney">
+                        <label for="name"></label>
+                        <input autocomplete="off" type="text" id="name" name="name" placeholder="Your name here">
+                        <label for="email"></label>
+                        <input autocomplete="off" type="email" id="nickname" name="nickname" placeholder="Your e-mail here">
+                     </div>
+                     <div class="column is-12">
+                        <div class="form-footer has-text-right mt-10">
+                           <button
+                              class="button cta is-large primary-btn form-button raised is-clear rounded"
+                              >Send Message</button
+                           >
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </div>
+      </div>
+   </div>
+
+   <div class="notification animated fadeInUp is-hidden">
+      <button class="delete"></button>
+      <span class="text"></span>
+   </div>
+</section>
+
+<script src="https://smtpjs.com/v3/smtp.js" is:inline></script>
+
+<script is:inline>
+   async function enviarEmail(cuerpo) {
+
+      const resp = await Email.send({
+         SecureToken: "6a3c8190-16d3-418f-8872-6544553d4b74",
+         To: "fonchimolina@gmail.com",
+         From: "web@believecleaning.com",
+         Subject: "Contact Form Web Believe",
+         Body: cuerpo,
+      })
+      if(resp !== 'OK') {
+         return false
+      }
+      return true
+   }
+
+   const nombre = document.querySelector('#nombreThulu2p')
+   const telf = document.querySelector('#telfThulu2p')
+   const email = document.querySelector('#emailThulu2p')
+   const mensaje = document.querySelector('#mensajeThulu2p')
+
+   const name = document.querySelector('#name')
+   const nickname = document.querySelector('#nickname')
+   const form = document.querySelector("#contact-form")
+   const notif = document.querySelector(".notification")
+
+   form.addEventListener('submit',(event)=>{
+      console.log(name.value);
+      event.preventDefault()
+      if(name.value === '' || name.value === null && nickname.value === '' || nickname.value === null){
+         const cuerpo =   `<h3>Contact Details</h3>
+                           <p><b>Name:</b> ${nombre.value}</p>
+                           <p><b>Contact Phone:</b> ${telf.value}</p>
+                           <p><b>Email:</b> ${email.value}</p>
+                           <p><b>Message:</b> ${mensaje.value}</p>
+                           <br><br>
+                           <p>This message was sent from believecleaning.com</p>`
+         const resp = enviarEmail(cuerpo)
+         if(resp) {
+            notif.classList.toggle('is-success')
+            notif.classList.toggle('is-hidden')
+            notif.lastElementChild.textContent = 'Your message was sent! 👍'
+         }
+      } else {
+         notif.lastElementChild.textContent = 'Oh sorry 🙁'
+         notif.classList.toggle('is-hidden')
+         notif.classList.toggle('is-danger')
+      }
+
+      setTimeout(()=> { 
+         notif.classList.toggle('is-hidden')
+         notif.classList.remove('is-danger')
+         notif.classList.remove('is-success')
+
+         nombre.value = ""
+         telf.value = ""
+         email.value = ""
+         mensaje.value = ""
+      }, 2000)
+   })
+
+
+</script>
+
+
+<style>
+    .ohnohoney{
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 0;
+        width: 0;
+        z-index: -1;
+    }
+
+    .notification {
+      width: 300px;
+      position: absolute;
+      bottom: 3rem;
+      right: 3rem;
+    }
+</style>

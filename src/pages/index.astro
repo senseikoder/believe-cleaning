@@ -3,6 +3,7 @@ import Layout from "../layouts/Default.astro";
 import Testimonials from "../components/Testimonials.astro";
 import ServicesCarousel from "../components/ServicesCarousel.astro";
 import "flickity/dist/flickity.min.css";
+import ContactForm from "../components/ContactForm.astro";
 const title = "Home";
 ---
 
@@ -33,7 +34,7 @@ const title = "Home";
 								Call Now
 							</a>
 							<a class="button cta secondary-btn raised rounded outline"
-								href="/free-quote">
+								href="/quote-now">
 								Get Free Quote
 							</a>
 							<a class="button cta primary-btn raised rounded outline"
@@ -75,16 +76,16 @@ const title = "Home";
 							</div>
 							<div class="card-action">
 								<a
-									href="#"
-									class="button primary-btn raised rounded mr-2"
-								>
+									href="https://www.facebook.com/believecleaningnyc"
+									class="button primary-btn raised rounded mr-2" target="_blank">
 									<span class="icon">
 										<i class="iconify" data-icon="fa6-brands:facebook"
 										></i>
 									</span>
 									<span>Facebook</span>
 								</a>
-								<a href="#" class="button primary-btn raised rounded">
+								<a href="https://www.instagram.com/believecleaning" 
+									class="button primary-btn raised rounded" target="_blank">
 									<span class="icon">
 										<i
 											class="iconify"
@@ -114,7 +115,7 @@ const title = "Home";
 								<p class="is-size-5 my-4">&nbsp;</p>
 							</div>
 							<div class="card-action">
-								<a href="#" class="button primary-btn raised rounded">
+								<a href="https://wa.me/+16464083334" class="button primary-btn raised rounded">
 									<span class="icon">
 										<i class="iconify" data-icon="fa6-brands:whatsapp"
 										></i>
@@ -244,61 +245,8 @@ const title = "Home";
 
 	<Testimonials />
 
-	<section class="section section-light-grey is-medium">
-		<div class="container">
-			<div class="title-wrapper has-text-centered">
-				<h2 class="title is-2 is-spaced">Drop us a line or two</h2>
-				<h3 class="subtitle is-5 is-muted">We'd love to hear from You</h3>
-				<div class="divider is-centered"></div>
-			</div>
+	<ContactForm />
 
-			<div class="content-wrapper">
-				<div class="columns">
-					<div class="column is-6 is-offset-3">
-						<form>
-							<div class="columns is-multiline">
-								<div class="column is-6">
-									<input
-										class="input is-medium"
-										type="text"
-										placeholder="First Name *"
-									/>
-								</div>
-								<div class="column is-6">
-									<input
-										class="input is-medium"
-										type="text"
-										placeholder="Phone *"
-									/>
-								</div>
-								<div class="column is-12">
-									<input
-										class="input is-medium"
-										type="text"
-										placeholder="Email *"
-									/>
-								</div>
-								<div class="column is-12">
-									<textarea
-										class="textarea"
-										rows="6"
-										placeholder="Message"></textarea>
-								</div>
-								<div class="column is-12">
-									<div class="form-footer has-text-right mt-10">
-										<button
-											class="button cta is-large primary-btn form-button raised is-clear rounded"
-											>Send Message</button
-										>
-									</div>
-								</div>
-							</div>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 </Layout>
 
 
