@@ -61,6 +61,10 @@ Responsive Styles
 		width: 300px;
 	}
 
+	.hero.is-fullheight .hero-body {
+		align-items: start;
+	}
+
 	.level-left {
 		&.level-social {
 			display: flex;

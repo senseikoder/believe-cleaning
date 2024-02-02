@@ -179,3 +179,27 @@ body {
 .aside-list a:hover {
   background-color: $primary-light;
 }
+
+.flickity-button {
+  opacity: .10;
+  background: #c2e5fc !important;
+  transition: all 0.3s;
+}
+
+.flickity-enabled:hover .flickity-button {
+  opacity: .65;
+}
+
+// .flickity-prev-next-button {
+//   width: 30px !important;
+//   height: 30px !important;
+// }
+
+/* position outside */
+// .flickity-prev-next-button.previous {
+//   left: -40px !important;
+// }
+
+// .flickity-prev-next-button.next {
+//   right: -40px !important;
+// }
