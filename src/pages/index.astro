@@ -2,21 +2,35 @@
 import Layout from "../layouts/Default.astro";
 import Testimonials from "../components/Testimonials.astro";
 import ServicesCarousel from "../components/ServicesCarousel.astro";
-import "flickity/dist/flickity.min.css";
 import ContactForm from "../components/ContactForm.astro";
+import "flickity/dist/flickity.min.css";
 const title = "Home";
 ---
 
 <Layout title={title}>
 
 	<section
-		class="hero is-fullheight is-grey"
-		data-background="img/banner-home.webp"
-		data-position="bottom center"
+		class="hero is-large is-relative"
+		data-background="/img/banner-home.webp"
 	>
+		<div class="hero-video">
+			<video
+			id="vimeo-video"
+			class="hero-video-content"
+			playsinline
+			autoplay
+			muted
+			loop
+			>
+				<source src="/ny-drone.mp4" type="video/mp4" />
+			</video>
+    	</div>
+
+		<div class="overlay" data-color="#0f366b" data-color-opacity=".65"></div>
+
 		<div class="hero-body">
 			<div class="container">
-				<div class="columns is-vcentered is-centered">
+				<div class="columns is-centered">
 					<div class="column is-10 has-text-centered">
 						<h1 class="title is-1 is-bold is-spaced">
 							Professional Cleaning Services
@@ -50,7 +64,7 @@ const title = "Home";
 
 	<!-- PROMO -->
 
-	<section class="section is-medium">
+	<section class="section is-medium pt-6">
 		<div class="container">
 			<div class="has-text-centered">
 				<h2 class="title is-1">Cleaning Services That Shine</h2>
@@ -271,5 +285,16 @@ const title = "Home";
 		});
 	});
 
-  
 </script>
+
+<style>
+	.hero .overlay
+		{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+		z-index: 0;
+		}
+</style>
