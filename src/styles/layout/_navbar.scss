@@ -113,6 +113,17 @@ Navbar
 					}
 				}
 			}
+
+
+			.nested.dropdown {
+				.navbar-link {
+					padding: 10px 20px;
+				}
+				
+				.navbar-link::after {
+					transform: rotate(-135deg);
+				}
+			}
 		}
 
 		.signup {
