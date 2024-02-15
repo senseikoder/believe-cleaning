@@ -4,6 +4,7 @@ export function initNavbar() {
     height: 60,
     mobileOpen: false,
     dropDownServices: false,
+    dropDownComercial: false,
     scroll() {
       let scrollValue = window.scrollY;
       if (scrollValue >= this.height) {

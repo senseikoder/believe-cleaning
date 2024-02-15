@@ -46,8 +46,13 @@ Responsive Styles
 
 			.navbar-item {
 				background-color: lighten($primary, 60%) !important;
-
+				
 			}
+		}
+		
+		.dropdown-item {
+			background-color: lighten($primary, 60%) !important;
+
 		}
 	}
 

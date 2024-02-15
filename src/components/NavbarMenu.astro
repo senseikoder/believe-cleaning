@@ -1,10 +1,9 @@
 <a href="/" class="navbar-item is-secondary"> Home</a>
 <a href="/about" class="navbar-item is-secondary"> About</a>
-<div
-   class="navbar-item has-dropdown is-hoverable"
-   @click="dropDownServices = ! dropDownServices; console.log(dropDownServices)"
->
-   <a class="navbar-link"> Services</a>
+<div class="navbar-item has-dropdown is-hoverable">
+   <a class="navbar-link" @click="dropDownServices = ! dropDownServices">
+      Services</a
+   >
    <div
       class="navbar-dropdown"
       :style="dropDownServices  && {display: 'block'} "
@@ -28,16 +27,24 @@
          Special Event Cleaning</a
       >
 
-      <div class="nested dropdown">
+      <div
+         class="nested dropdown"
+         @click="dropDownComercial = ! dropDownComercial; console.log(dropDownComercial)"
+      >
          <a class="navbar-link">
             <span>Commercial Cleaning</span>
          </a>
 
-         <div class="dropdown-menu is-active" id="dropdown-menu" role="menu">
+         <div
+            class="dropdown-menu"
+            id="dropdown-menu"
+            role="menu"
+            :style="dropDownComercial && {display: 'block'} "
+         >
             <div class="dropdown-content">
-               <a href="/" class="dropdown-item"> Office</a>
-               <a class="dropdown-item"> Restauran</a>
-               <a class="dropdown-item"> Building</a>
+               <a href="#" class="dropdown-item"> Office</a>
+               <a href="#" class="dropdown-item"> Restaurant</a>
+               <a href="#" class="dropdown-item"> Building</a>
             </div>
          </div>
       </div>
@@ -68,5 +75,15 @@
    }
 
    @media (max-width: 767px) {
+      .nested.dropdown .dropdown-menu {
+         display: none;
+         top: 0;
+         margin-left: 0;
+         position: relative;
+      }
+
+      .navbar-item.has-dropdown .nested.dropdown .navbar-link::after {
+         transform: rotate(-45deg);
+      }
    }
 </style>

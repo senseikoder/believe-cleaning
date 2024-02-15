@@ -101,11 +101,15 @@ Navbar
 						background-color: lighten($primary, 50%) !important;
 					}
 				}
-				
+
+				.nested:hover {
+					background-color: lighten($primary, 50%) !important;
+				}
+
 			}
 
 			&:hover {
-				.navbar-link {
+				>.navbar-link {
 					color: $secondary;
 
 					&:after {
