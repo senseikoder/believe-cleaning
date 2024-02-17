@@ -8,23 +8,22 @@ const title = "Home";
 ---
 
 <Layout title={title}>
-
 	<section
 		class="hero is-large is-relative"
 		data-background="/img/banner-home.webp"
 	>
 		<div class="hero-video">
 			<video
-			id="vimeo-video"
-			class="hero-video-content"
-			playsinline
-			autoplay
-			muted
-			loop
+				id="vimeo-video"
+				class="hero-video-content"
+				playsinline
+				autoplay
+				muted
+				loop
 			>
 				<source src="/ny-drone.mp4" type="video/mp4" />
 			</video>
-    	</div>
+		</div>
 
 		<div class="overlay" data-color="#0f366b" data-color-opacity=".65"></div>
 
@@ -42,20 +41,32 @@ const title = "Home";
 						</h2>
 
 						<div class="buttons is-justify-content-center">
-
-							<a class="button cta primary-btn raised rounded outline"
-								href="tel:646-408-3334">
+							<a
+								class="button cta primary-btn raised rounded outline"
+								href="tel:646-408-3334"
+							>
 								Call Now
 							</a>
-							<a class="button cta secondary-btn raised rounded outline"
-								href="/quote-now">
+							<a
+								class="button cta secondary-btn raised rounded outline"
+								href="/quote-now"
+							>
 								Get Free Quote
 							</a>
-							<a class="button cta primary-btn raised rounded outline"
-								href="#">
+							<a
+								class="button cta primary-btn raised rounded outline"
+								href="#"
+							>
 								Book Us now
 							</a>
 						</div>
+
+						<br>
+
+						<h2 class="title is-2">Areas We Service</h2>
+						<h3 class="subtitle is-5 is-muted">
+							Manhattan - Brooklyn - Queens - Staten Island - Long Island
+						</h3>
 					</div>
 				</div>
 			</div>
@@ -67,15 +78,16 @@ const title = "Home";
 	<section class="section pt-6">
 		<div class="container">
 			<div class="has-text-centered">
-				<h2 class="title is-1">Areas We Service</h2>
-				<h3 class="subtitle is-5 is-muted">Manhattan - Brooklyn - Queens - Staten Island - Long Island</h3>
-				<div class="divider is-centered"></div>
+				<!-- <h2 class="title is-1">Areas We Service</h2>
+				<h3 class="subtitle is-5 is-muted">
+					Manhattan - Brooklyn - Queens - Staten Island - Long Island
+				</h3>
+				<div class="divider is-centered"></div> -->
 			</div>
-			
-			<div class="feature-cards content-wrapper">
 
+			<div class="feature-cards content-wrapper">
 				<figure class="image mb-6">
-					<img src="/img/flyer-believe-cleaning.webp" alt="">
+					<img src="/img/flyer-believe-cleaning.webp" alt="" />
 				</figure>
 
 				<!-- <div class="columns">
@@ -149,28 +161,9 @@ const title = "Home";
 		</div>
 	</section>
 
-
-
-
-
-
-
-
-
-
 	<!-- SERVICES CARRUSEL -->
 
 	<ServicesCarousel />
-
-
-
-
-
-
-
-
-
-
 
 	<section
 		class="section is-medium has-background-image"
@@ -210,18 +203,7 @@ const title = "Home";
 		</div>
 	</section>
 
-
-
-
-
-
-
-
-
-
-
 	<!-- About us -->
-
 
 	<section class="section is-medium">
 		<div class="container">
@@ -265,15 +247,12 @@ const title = "Home";
 	<Testimonials />
 
 	<ContactForm />
-
 </Layout>
 
-
 <script>
+	import Flickity from "flickity";
 
-   import Flickity from "flickity";
-
-	document.addEventListener('astro:page-load', () => {
+	document.addEventListener("astro:page-load", () => {
 		let flkty = new Flickity(".service-carousel", {
 			draggable: true,
 			contain: true,
@@ -289,17 +268,15 @@ const title = "Home";
 			wrapAround: true,
 		});
 	});
-
 </script>
 
 <style>
-	.hero .overlay
-		{
+	.hero .overlay {
 		position: absolute;
 		top: 0;
 		left: 0;
 		height: 100%;
 		width: 100%;
 		z-index: 0;
-		}
+	}
 </style>
