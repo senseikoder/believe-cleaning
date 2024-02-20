@@ -14,7 +14,6 @@ import "./libs/components";
 
 
 document.addEventListener('astro:page-load', () => {
-  // console.log('👍🏻');
   //Switch backgrounds
   insertBgImages()
   insertOverlays()
