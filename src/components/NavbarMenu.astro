@@ -1,8 +1,8 @@
 <a href="/" class="navbar-item is-secondary"> Home</a>
 <a href="/about" class="navbar-item is-secondary"> About</a>
 <div class="navbar-item has-dropdown is-hoverable">
-   <a class="navbar-link" @click="dropDownServices = ! dropDownServices">
-      Services</a
+   <span class="navbar-link" @click="dropDownServices = ! dropDownServices">
+      Services</span
    >
    <div
       class="navbar-dropdown"
@@ -31,9 +31,9 @@
          class="nested dropdown"
          @click="dropDownComercial = ! dropDownComercial; console.log(dropDownComercial)"
       >
-         <a class="navbar-link">
+         <span class="navbar-link">
             <span>Commercial Cleaning</span>
-         </a>
+         </span>
 
          <div
             class="dropdown-menu"

@@ -3,6 +3,13 @@ Responsive Styles
 ========================================================================== */
 
 @media (max-width: 767px) {
+
+	.hero-body {
+		padding-top: 3rem;
+		padding-bottom: 3rem;
+	}
+
+
 	.landing-caption {
 		text-align: center;
 	}
@@ -46,10 +53,10 @@ Responsive Styles
 
 			.navbar-item {
 				background-color: lighten($primary, 60%) !important;
-				
+
 			}
 		}
-		
+
 		.dropdown-item {
 			background-color: lighten($primary, 60%) !important;
 

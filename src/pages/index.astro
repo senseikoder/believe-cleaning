@@ -9,7 +9,7 @@ const description = `See your reflection! Discover the ultimate solution for a s
 ---
 
 <Layout title={title} description={description}>
-	<section class="hero is-large is-relative">
+	<section class="hero is-relative" data-background="/img/banner-home.webp">
 		<div class="hero-video">
 			<video
 				id="vimeo-video"
@@ -209,7 +209,7 @@ const description = `See your reflection! Discover the ultimate solution for a s
 				<div class="column is-5">
 					<div class="has-text-centered">
 						<figure class="image">
-							<img src="/img/Believe-Eulalia.webp" />
+							<img src="/img/Believe-Eulalia.webp" alt="Eulalia Cleaning Service"/>
 						</figure>
 					</div>
 				</div>
@@ -276,5 +276,17 @@ const description = `See your reflection! Discover the ultimate solution for a s
 		height: 100%;
 		width: 100%;
 		z-index: 0;
+	}
+
+	.hero {
+		padding-top: 6rem;
+		padding-bottom: 6rem;
+	}
+
+	@media (max-width: 767px) {
+		.hero {
+			padding-top: 3rem;
+			padding-bottom: 3rem;
+		}
 	}
 </style>
