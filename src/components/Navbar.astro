@@ -1,118 +1,122 @@
 ---
-import NavbarMenu from "./NavbarMenu.astro"
+import NavbarMenu from "./NavbarMenu.astro";
 ---
 
 <div class="section p-3 navbar-row is-hidden-mobile">
-	<div class="container">
-		<div class="columns is-vcentered">
-			<div class="column">
-				<figure class="image">
-					<a href="/">
-						<img
-						src="/img/logo/believe-cleaning-logo-solo.webp"
-						alt="Logo Believe Cleaning"
-						width="225"
-						height="60"
-						/>
-					</a>
-				</figure>
-			</div>
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column">
+        <figure class="image">
+          <a href="/">
+            <img
+              src="/img/logo/believe-cleaning-logo-solo.webp"
+              alt="Logo Believe Cleaning"
+              width="225"
+              height="60"
+            />
+          </a>
+        </figure>
+      </div>
 
-			<div class="column">
-				<div class="level">
-					<div class="level-left">
-						<div class="level-item">
-							<div
-								class="icon-wrap is-icon-reveal is-size-3 has-text-secondary"
-							>
-								<i class="iconify" data-icon="fa6-regular:clock"></i>
-							</div>
-						</div>
-						<div class="level-item">
-							<div class="subtitle">
-								Working Hours<br /> 8:00 a.m. to 6 p.m.
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
+      <div class="column">
+        <div class="level">
+          <div class="level-left">
+            <div class="level-item">
+              <div
+                class="icon-wrap is-icon-reveal is-size-3 has-text-secondary"
+              >
+                <i class="iconify" data-icon="fa6-regular:clock"></i>
+              </div>
+            </div>
+            <div class="level-item">
+              <div class="subtitle">
+                Working Hours<br /> 8:00 a.m. to 6 p.m.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div class="column">
-				<div class="block">
-					<h4 class="subtitle has-text-right">
-						Call us<br />
-						<span class="is-size-3">646-408-3334</span>
-					</h4>
-				</div>
-			</div>
+      <div class="column">
+        <div class="block">
+          <h4 class="subtitle has-text-right">
+            Call us<br />
+            <span class="is-size-3">646-408-3334</span>
+          </h4>
+        </div>
+      </div>
 
-			<div class="column">
-				<div class="block has-text-right">
-					<a
-						href="/quote-now"
-						class="button is-primary rounded raised is-large">QUOTE NOW</a
-					>
-				</div>
-			</div>
-		</div>
-	</div>
+      <div class="column">
+        <div class="block has-text-right">
+          <a
+            id="Setmore_button_iframe"
+            href="https://believecleaningservices.setmore.com"
+            class="button is-primary rounded raised is-large">QUOTE NOW</a
+          >
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <nav
-	x-data="initNavbar()"
-	class="navbar is-fresh is-transparent no-shadow"
-	role="navigation"
-	aria-label="main navigation"
+  x-data="initNavbar()"
+  class="navbar is-fresh is-transparent no-shadow"
+  role="navigation"
+  aria-label="main navigation"
 >
-	<div class="container">
-		<div class="navbar-brand is-hidden-tablet">
-			<a class="navbar-item" href="/">
-				<img
-					src="/img/logo/believe-cleaning-logo-solo.webp"
-					alt="Logo Believe Cleaning"
-					width="225"
-					height="60"
-				/>
-			</a>
+  <div class="container">
+    <div class="navbar-brand is-hidden-tablet">
+      <a class="navbar-item" href="/">
+        <img
+          src="/img/logo/believe-cleaning-logo-solo.webp"
+          alt="Logo Believe Cleaning"
+          width="225"
+          height="60"
+        />
+      </a>
 
-			<div class="navbar-burger" @click="openMobileMenu()">
-				<span class="menu-toggle">
-					<span
-						class="icon-box-toggle"
-						:class="{
+      <div class="navbar-burger" @click="openMobileMenu()">
+        <span class="menu-toggle">
+          <span
+            class="icon-box-toggle"
+            :class="{
                       'active': mobileOpen,
                       '': !mobileOpen
                   }"
-					>
-						<span class="rotate">
-							<i class="icon-line-top"></i>
-							<i class="icon-line-center"></i>
-							<i class="icon-line-bottom"></i>
-						</span>
-					</span>
-				</span>
-			</div>
-		</div>
+          >
+            <span class="rotate">
+              <i class="icon-line-top"></i>
+              <i class="icon-line-center"></i>
+              <i class="icon-line-bottom"></i>
+            </span>
+          </span>
+        </span>
+      </div>
+    </div>
 
-		<div
-			id="navbar-menu"
-			class="navbar-menu is-static"
-			:class="{
+    <div
+      id="navbar-menu"
+      class="navbar-menu is-static"
+      :class="{
                 'is-active': mobileOpen,
                 '': !mobileOpen
             }"
-		>
-			<div class="navbar-start has-text-weight-medium">
-				<NavbarMenu />
-			</div>
+    >
+      <div class="navbar-start has-text-weight-medium">
+        <NavbarMenu />
+      </div>
 
-			<!-- <div class="navbar-end">
+      <!-- <div class="navbar-end">
 				<a class="navbar-item">
 					<span class="button signup-button secondary-btn raised">
 						Sign up
 					</span>
 				</a>
 			</div> -->
-		</div>
-	</div>
+    </div>
+  </div>
 </nav>
+
+
+<script is:inline id="setmore_script" type="text/javascript" src="https://assets.setmore.com/integration/static/setmoreIframeLive.js"></script>

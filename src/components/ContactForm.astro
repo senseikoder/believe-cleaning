@@ -76,11 +76,13 @@
 <script src="https://smtpjs.com/v3/smtp.js" is:inline></script>
 
 <script is:inline>
+   console.log(Email);
    async function enviarEmail(cuerpo) {
 
       const resp = await Email.send({
          SecureToken: "6a3c8190-16d3-418f-8872-6544553d4b74",
-         To: "believecleaningservicesnyc@gmail.com",
+         To: "frank.uneweb@gmail.com",
+         // To: "believecleaningservicesnyc@gmail.com",
          From: "web@believecleaning.com",
          Subject: "Contact Form Web Believe",
          Body: cuerpo,
